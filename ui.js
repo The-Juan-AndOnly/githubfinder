@@ -26,9 +26,9 @@ class UI {
             <span class="badge badge-info">Following: ${user.following}</span>
             <br><br>
             <ul class="list-group">
-            <li class="list-group-item">Company: ${user.company===null?'Not Listed':user.company}</li>
+            <li class="list-group-item">Company: ${(user.company===null?'Not Listed':user.company)}</li>
             <li class="list-group-item">Website/Blog: ${user.blog}</li> 
-            <li class="list-group-item">Location: ${user.location===null?'Not Listed':user.location}</li> 
+            <li class="list-group-item">Location: ${(user.location===null?'Not Listed':user.location)}</li> 
             <li class="list-group-item">Member Since: ${new Date(
               user.created_at
             ).getFullYear()}</li>
